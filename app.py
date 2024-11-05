@@ -80,7 +80,7 @@ def learn():
             'error': 'Topic not found',
             'available_topics': list(PYTHON_CONCEPTS.keys())
         })
-
+@app.route('/random')
 def provide_random_example():
     examples = [
         "Here's a list comprehension example: squares = [x**2 for x in range(5)]",
